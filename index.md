@@ -3,7 +3,7 @@ title: Mane Privacy Policy
 ---
 
 
-**Last updated: 3 October 2026**
+**Last updated: 4 October 2026**
 
 Mane is a hair styling app for men. This policy explains what happens to your
 information. It is short because Mane collects very little.
@@ -18,7 +18,9 @@ information. It is short because Mane collects very little.
   and they are never used to train AI models.
 - To keep the free AI features fair and affordable, our server counts how many
   times each install has used them, using a random ID the app makes up. That ID
-  is not linked to your name, your Apple ID, or anything else about you.
+  is not linked to your name, your Apple ID, or anything else about you. To stop
+  automated abuse it also keeps a short-lived daily count per network, which
+  never contains your IP address.
 - We do not use analytics, advertising, or tracking of any kind.
 - We never sell your information. There is nothing to sell.
 
@@ -72,6 +74,12 @@ time you use an AI feature and sends it with each request. Our server stores:
 That is all. It contains no photos, answers, profile, log, or notes, and it is
 not linked to your name, email, Apple ID, or device hardware. We use it only to
 apply the allowance, never for tracking or advertising.
+
+To stop automated abuse, our server also counts how many AI requests arrive
+from each network per day. It does **not** store your IP address. It stores a
+scrambled code (a keyed hash) made from the network address and that day's
+date: it can't be turned back into the address, and the same network gets a
+different code each day. These daily counts are deleted after about a day.
 
 The install ID is kept in your iPhone's secure storage (the Keychain) so that
 deleting and reinstalling the app does not reset the allowance. iOS may keep it
